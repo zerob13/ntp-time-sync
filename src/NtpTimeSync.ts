@@ -1,7 +1,7 @@
 "use strict";
 
 import * as dgram from "dgram";
-import { NtpPacket, NtpPacketParser } from "ntp-packet-parser";
+import { NtpPacket, NtpPacketParser } from "ntp-packet-parser-zerob13";
 import { NtpTimeResult } from "./NtpTimeResult";
 import { RecursivePartial } from "./RecursivePartial";
 
