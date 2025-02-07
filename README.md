@@ -4,6 +4,7 @@
 
 # ntp-time-sync
 Node.JS module to fetch the current time from NTP servers and returns offset information.
+This version only includes minimal modifications to support Node.js 22.
 
 **:information_source: NTP requires UDP which is not available in a browser context!**
 
@@ -51,9 +52,9 @@ console.log("real time", result.now);
 
 `<ntpTimeSyncInstance>.getTime()` returns a `Promise` object which will eventually be resolved with a object containing the following information:
 
-| Property | Description |
-| :--- | :--- |
-| `now` | Current NTP time ("real time") |
+| Property | Description                                              |
+| :------- | :------------------------------------------------------- |
+| `now`    | Current NTP time ("real time")                           |
 | `offset` | Calculated offset between local system time and NTP time |
  
 `<ntpTimeSyncInstance>.now()` returns a `Date` object containing the correct time for the moment when the function was called.
